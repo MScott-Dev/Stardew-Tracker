@@ -2,15 +2,14 @@ const { Schema, model } = require('mongoose');
 
 const itemSchema = new Schema({
   name: {
-    type: String,
-    required: 'You need to leave a thought!',
-    minlength: 1,
-    maxlength: 280,
-    trim: true,
+    type: String
   },
   donated: {
-    type: Boolean,
+    type: Boolean
   },
+  imageName: {
+    type: String
+  }
 });
 
 const Item = model('Item', itemSchema);

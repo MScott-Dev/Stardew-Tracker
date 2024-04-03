@@ -1,0 +1,330 @@
+[
+    {
+        "name": "Spring Foraging Bundle",
+        "items": [{
+            "name": "Wild Horseradish",
+            "donated": false,
+            "imageName": "Wild_Horseradish"
+        },
+        {
+            "name": "Daffodil",
+            "donated": false,
+            "imageName": "Daffodil"
+        },
+        {
+            "name": "Leek",
+            "donated": false,
+            "imageName": "Leek"
+        },
+        {
+            "name": "Dandelion",
+            "donated": false,
+            "imageName": "Dandelion"
+        }]
+    },
+    {
+        "name": "Summer Foraging Bundle",
+        "items": [{
+            "name": "Grape",
+            "donated": false,
+            "imageName": "Grape"
+        },{
+            "name": "Spice Berry",
+            "donated": false,
+            "imageName": "Spice Berry"
+        },
+        {
+            "name": "Sweet Pea",
+            "donated": false,
+            "imageName": "SweetPea"
+        }]
+    },
+    {
+        "name": "Fall Foraging Bundle",
+        "items": [{
+            "name": "Common Mushroom",
+            "donated": false,
+            "imageName": "CommonMushroom"
+        },{
+            "name": "Wild Plum",
+            "donated": false,
+            "imageName": "WildPlum"
+        },{
+            "name": "Hazel Nut",
+            "donated": false,
+            "imageName": "HazelNut"
+        },{
+            "name": "Blackberry",
+            "donated": false,
+            "imageName": "Blackberry"
+        }]
+    },
+    {
+        "name": "Winter Foraging Bundle",
+        "items": [{
+            "name": "Winter Root",
+            "donated": false,
+            "imageName": "WinterRoot"
+        },{
+            "name": "Crystal Fruit",
+            "donated": false,
+            "imageName": "CrystalFruit"
+        },{
+            "name": "Snow Yam",
+            "donated": false,
+            "imageName": "SnowYam"
+        },{
+            "name": "Crocus",
+            "donated": false,
+            "imageName": "Crocus"
+        }]
+    },
+    {
+        "name": "Construction Bundle",
+        "items": [{
+            "name": "Wood (99)",
+            "donated": false,
+            "imageName": "Wood"
+        },{
+            "name": "Wood (99)",
+            "donated": false,
+            "imageName": "Wood"
+        },{
+            "name": "Stone (99)",
+            "donated": false,
+            "imageName": "Stone"
+        },{
+            "name": "Hardwood (10)",
+            "donated": false,
+            "imageName": "Hardwood"
+        }]
+    },
+    {
+        "name": "Exotic Foraging Bundle",
+        "items": [{
+            "name": "Coconut",
+            "donated": false,
+            "imageName": "Coconut"
+        },{
+            "name": "Cactus Fruit",
+            "donated": false,
+            "imageName": "CactusFruit"
+        },{
+            "name": "Cave Carrot",
+            "donated": false,
+            "imageName": "CaveCarrot"
+        },{
+            "name": "Red Mushroom",
+            "donated": false,
+            "imageName": "RedMushroom"
+        },{
+            "name": "Purple Mushroom",
+            "donated": false,
+            "imageName": "PurpleMushroom"
+        },{
+            "name": "Maple Syrup",
+            "donated": false,
+            "imageName": "MapleSyrup"
+        },{
+            "name": "Oak Resin",
+            "donated": false,
+            "imageName": "OakResin"
+        },{
+            "name": "Pine Tar",
+            "donated": false,
+            "imageName": "PineTar"
+        },{
+            "name": "Morel",
+            "donated": false,
+            "imageName": "Morel"
+        }]
+    },
+    {
+        "name": "Spring Crops Bundle",
+        "items": [{
+            "name": "Parsnip",
+            "donated": false,
+            "imageName": "Parsnip"
+        },{
+            "name": "Green Bean",
+            "donated": false,
+            "imageName": "GreenBean"
+        },{
+            "name": "Cauliflower",
+            "donated": false,
+            "imageName": "Cauliflower"
+        },{
+            "name": "Potato",
+            "donated": false,
+            "imageName": "Potato"
+        }]
+    },
+    {
+        "name": "Summer Crops Bundle",
+        "items": [{
+            "name": "Tomato",
+            "donated": false,
+            "imageName": "Tomato"
+        },{
+            "name": "Hot Pepper",
+            "donated": false,
+            "imageName": "HotPepper"
+        },{
+            "name": "Blueberry",
+            "donated": false,
+            "imageName": "Blueberry"
+        },{
+            "name": "Melon",
+            "donated": false,
+            "imageName": "Melon"
+        }]
+    },
+    {
+        "name": "Fall Crops Bundle",
+        "items": [{
+            "name": "Corn",
+            "donated": false,
+            "imageName": "Corn"
+        },{
+            "name": "Eggplant",
+            "donated": false,
+            "imageName": "Eggplant"
+        },{
+            "name": "Pumpkin",
+            "donated": false,
+            "imageName": "Pumpkin"
+        },{
+            "name": "Yam",
+            "donated": false,
+            "imageName": "Yam"
+        }]
+    },
+    {
+        "name": "Quality Crops Bundle",
+        "items": [{
+            "name": "Parsnip (5)",
+            "donated": false,
+            "imageName": "ParsnipGold"
+        },{
+            "name": "Melon (5)",
+            "donated": false,
+            "imageName": "MelonGold"
+        },{
+            "name": "Pumpkin (5)",
+            "donated": false,
+            "imageName": "PumpkinGold"
+        },{
+            "name": "Corn (5)",
+            "donated": false,
+            "imageName": "CornGold"
+        }]
+    },
+    {
+        "name": "Animal Bundle",
+        "items": [{
+            "name": "Large Milk",
+            "donated": false,
+            "imageName": "LargeMilk"
+        },{
+            "name": "",
+            "donated": false,
+            "imageName": ""
+        },{
+            "name": "",
+            "donated": false,
+            "imageName": ""
+        },{
+            "name": "",
+            "donated": false,
+            "imageName": ""
+        },{
+            "name": "",
+            "donated": false,
+            "imageName": ""
+        },{
+            "name": "",
+            "donated": false,
+            "imageName": ""
+        },]
+    },
+    {
+        "name": "Artisan Bundle",
+        "items": []
+    },
+    {
+        "name": "River Fish Bundle",
+        "items": []
+    },
+    {
+        "name": "Lake Fish",
+        "items": []
+    },
+    {
+        "name": "Ocean Fish",
+        "items": []
+    },
+    {
+        "name": "Night Fishing Bundle",
+        "items": []
+    },
+    {
+        "name": "Crab Pot Bundle",
+        "items": []
+    },
+    {
+        "name": "Specialty Fish Bundle",
+        "items": []
+    },
+    {
+        "name": "Blacksmith's Bundle",
+        "items": []
+    },
+    {
+        "name": "Geologist's Bundle",
+        "items": []
+    },
+    {
+        "name": "Adventurer's Bundle",
+        "items": []
+    },
+    {
+        "name": "Chef's Bundle",
+        "items": []
+    },
+    {
+        "name": "Dye Bundle",
+        "items": []
+    },
+    {
+        "name": "Field Research Bundle",
+        "items": []
+    },
+    {
+        "name": "Fodder Bundle",
+        "items": []
+    },
+    {
+        "name": "Enchanter's Bundle",
+        "items": []
+    },
+    {
+        "name": "2,500 Bundle",
+        "items": []
+    },
+    {
+        "name": "5,000 Bundle",
+        "items": []
+    },
+    {
+        "name": "10,000 Bundle",
+        "items": []
+    },
+    {
+        "name": "25,000 Bundle",
+        "items": []
+    },
+    {
+        "name": "The Missing Bundle",
+        "items": []
+    }
+]

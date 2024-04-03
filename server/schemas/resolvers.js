@@ -1,8 +1,33 @@
 const { User, Item } = require('../models');
+const { signToken, AuthenticationError } = require("../utils/auth");
 
 const resolvers = {
   Query: {
-    
+    me: async (parent, args, context) => {
+      if (context.user) {
+        const userData = await User.findOne({ _id: context.user._id }).select(
+          "-__v -password"
+        );
+
+        return userData;
+      }
+      throw AuthenticationError;
+    },
+    users: async (parent, args) => {
+      const usersData = await User.find().select("-__v -password");
+
+      return usersData;
+    },
+    items: async (parent, args) => {
+      const usersData = await Item.find();
+
+      return usersData;
+    },
+    item: async (parent, args) => {
+      const usersData = await Item.findOne({ bundle: args.bundles});
+
+      return usersData;
+    },
   },
 
   Mutation: {
@@ -12,7 +37,7 @@ const resolvers = {
 
       return { token, user };
     },
-  }
+  },
 };
 
 module.exports = resolvers;
