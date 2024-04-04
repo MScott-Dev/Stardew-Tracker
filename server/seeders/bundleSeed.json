@@ -226,105 +226,447 @@
             "donated": false,
             "imageName": "LargeMilk"
         },{
-            "name": "",
+            "name": "Large Egg (Brown)",
             "donated": false,
-            "imageName": ""
+            "imageName": "LargeEggBrown"
         },{
-            "name": "",
+            "name": "Large Egg",
             "donated": false,
-            "imageName": ""
+            "imageName": "Large Egg"
         },{
-            "name": "",
+            "name": "Large Goat Milk",
             "donated": false,
-            "imageName": ""
+            "imageName": "LargeGoatMilk"
         },{
-            "name": "",
+            "name": "Wool",
             "donated": false,
-            "imageName": ""
+            "imageName": "Wool"
         },{
-            "name": "",
+            "name": "Duck Egg",
             "donated": false,
-            "imageName": ""
-        },]
+            "imageName": "DuckEgg"
+        }]
     },
     {
         "name": "Artisan Bundle",
-        "items": []
+        "items": [{
+            "name": "Truffle Oil",
+            "donated": false,
+            "imageName": "TruffleOil"
+        },{
+            "name": "Cloth",
+            "donated": false,
+            "imageName": "Cloth"
+        },{
+            "name": "Goat Cheese",
+            "donated": false,
+            "imageName": "Goat Cheese"
+        },{
+            "name": "Cheese",
+            "donated": false,
+            "imageName": "Cheese"
+        },{
+            "name": "Honey",
+            "donated": false,
+            "imageName": "Honey"
+        },{
+            "name": "Jelly",
+            "donated": false,
+            "imageName": "Jelly"
+        },{
+            "name": "Apple",
+            "donated": false,
+            "imageName": "Apple"
+        },{
+            "name": "Apricot",
+            "donated": false,
+            "imageName": "Apricot"
+        },{
+            "name": "Orange",
+            "donated": false,
+            "imageName": "Orange"
+        },{
+            "name": "Peach",
+            "donated": false,
+            "imageName": "Peach"
+        },{
+            "name": "Pomegranate",
+            "donated": false,
+            "imageName": "Pomegranate"
+        },{
+            "name": "Cherry",
+            "donated": false,
+            "imageName": "Cherry"
+        }]
     },
     {
         "name": "River Fish Bundle",
-        "items": []
+        "items": [{
+            "name": "Sunfish",
+            "donated": false,
+            "imageName": "Sunfish"
+        },{
+            "name": "Catfish",
+            "donated": false,
+            "imageName": "Catfish"
+        },{
+            "name": "Shad",
+            "donated": false,
+            "imageName": "Shad"
+        },{
+            "name": "Tiger Trout",
+            "donated": false,
+            "imageName": "TigerTrout"
+        }]
     },
     {
         "name": "Lake Fish",
-        "items": []
+        "items": [{
+            "name": "Largemouth Bass",
+            "donated": false,
+            "imageName": "LargemouthBass"
+        },{
+            "name": "Carp",
+            "donated": false,
+            "imageName": "Carp"
+        },{
+            "name": "Bullhead",
+            "donated": false,
+            "imageName": "Bullhead"
+        },{
+            "name": "Sturgeon",
+            "donated": false,
+            "imageName": "Sturgeon"
+        }]
     },
     {
         "name": "Ocean Fish",
-        "items": []
+        "items": [{
+            "name": "Sardine",
+            "donated": false,
+            "imageName": "Sardine"
+        },{
+            "name": "Tuna",
+            "donated": false,
+            "imageName": "Tuna"
+        },{
+            "name": "Red Snapper",
+            "donated": false,
+            "imageName": "RedSnapper"
+        },{
+            "name": "Tilapia",
+            "donated": false,
+            "imageName": "Tilapia"
+        }]
     },
     {
         "name": "Night Fishing Bundle",
-        "items": []
+        "items": [{
+            "name": "Walleye",
+            "donated": false,
+            "imageName": "Walleye"
+        },{
+            "name": "Bream",
+            "donated": false,
+            "imageName": "Bream"
+        },{
+            "name": "Eel",
+            "donated": false,
+            "imageName": "Eel"
+        }]
     },
     {
         "name": "Crab Pot Bundle",
-        "items": []
+        "items": [{
+            "name": "Lobster",
+            "donated": false,
+            "imageName": "Lobster"
+        },{
+            "name": "Crayfish",
+            "donated": false,
+            "imageName": "Crayfish"
+        },{
+            "name": "Crab",
+            "donated": false,
+            "imageName": "Crab"
+        },{
+            "name": "Cockle",
+            "donated": false,
+            "imageName": "Cockle"
+        },{
+            "name": "Mussel",
+            "donated": false,
+            "imageName": "Mussel"
+        },{
+            "name": "Shrimp",
+            "donated": false,
+            "imageName": "Shrimp"
+        },{
+            "name": "Snail",
+            "donated": false,
+            "imageName": "Snail"
+        },{
+            "name": "Periwinkle",
+            "donated": false,
+            "imageName": "Periwinkle"
+        },{
+            "name": "Oyster",
+            "donated": false,
+            "imageName": "Oyster"
+        },{
+            "name": "Clam",
+            "donated": false,
+            "imageName": "Clam"
+        }]
     },
     {
         "name": "Specialty Fish Bundle",
-        "items": []
+        "items": [{
+            "name": "Pufferfish",
+            "donated": false,
+            "imageName": "Pufferfish"
+        },{
+            "name": "Ghostfish",
+            "donated": false,
+            "imageName": "Ghostfish"
+        },{
+            "name": "Sandfish",
+            "donated": false,
+            "imageName": "Sandfish"
+        },{
+            "name": "Woodskip",
+            "donated": false,
+            "imageName": "Woodskip"
+        }]
     },
     {
         "name": "Blacksmith's Bundle",
-        "items": []
+        "items": [{
+            "name": "Copper Bar",
+            "donated": false,
+            "imageName": "CopperBar"
+        },{
+            "name": "Iron Bar",
+            "donated": false,
+            "imageName": "IronBar"
+        },{
+            "name": "Gold Bar",
+            "donated": false,
+            "imageName": "GoldBar"
+        }]
     },
     {
         "name": "Geologist's Bundle",
-        "items": []
+        "items": [{
+            "name": "Quartz",
+            "donated": false,
+            "imageName": "Quartz"
+        },{
+            "name": "Earth Crystal",
+            "donated": false,
+            "imageName": "Earth Crystal"
+        },{
+            "name": "Frozen Tear",
+            "donated": false,
+            "imageName": "FrozenTear"
+        },{
+            "name": "Fire Quartz",
+            "donated": false,
+            "imageName": "Fire Quartz"
+        }]
     },
     {
         "name": "Adventurer's Bundle",
-        "items": []
+        "items": [{
+            "name": "Slime (99)",
+            "donated": false,
+            "imageName": "Slime"
+        },{
+            "name": "Bat Wing (10)",
+            "donated": false,
+            "imageName": "BatWing"
+        },{
+            "name": "Solar Essence",
+            "donated": false,
+            "imageName": "Solar Essence"
+        },{
+            "name": "Void Essence",
+            "donated": false,
+            "imageName": "Void Essence"
+        }]
     },
     {
         "name": "Chef's Bundle",
-        "items": []
+        "items": [{
+            "name": "MapleSyrup",
+            "donated": false,
+            "imageName": "MapleSyrup"
+        },{
+            "name": "Fiddlehead Fern",
+            "donated": false,
+            "imageName": "FiddleheadFern"
+        },{
+            "name": "Truffle",
+            "donated": false,
+            "imageName": "Truffle"
+        },{
+            "name": "Poppy",
+            "donated": false,
+            "imageName": "Poppy"
+        },{
+            "name": "Maki Roll",
+            "donated": false,
+            "imageName": "Maki Roll"
+        },{
+            "name": "Fried Egg",
+            "donated": false,
+            "imageName": "Fried Egg"
+        }]
     },
     {
         "name": "Dye Bundle",
-        "items": []
+        "items": [{
+            "name": "Red Mushroom",
+            "donated": false,
+            "imageName": "RedMushroom"
+        },{
+            "name": "Sea Urchin",
+            "donated": false,
+            "imageName": "SeaUrchin"
+        },{
+            "name": "Sunflower",
+            "donated": false,
+            "imageName": "Sunflower"
+        },{
+            "name": "Duck Feather",
+            "donated": false,
+            "imageName": "DuckFeather"
+        },{
+            "name": "Aquamarine",
+            "donated": false,
+            "imageName": "Aquamarine"
+        },{
+            "name": "Red Cabbage",
+            "donated": false,
+            "imageName": "RedCabbage"
+        }]
     },
     {
         "name": "Field Research Bundle",
-        "items": []
+        "items": [{
+            "name": "Purple Mushroom",
+            "donated": false,
+            "imageName": "PurpleMushroom"
+        },{
+            "name": "Nautilus Shell",
+            "donated": false,
+            "imageName": "NuatilusShell"
+        },{
+            "name": "Chub",
+            "donated": false,
+            "imageName": "Chub"
+        },{
+            "name": "Frozen Geode",
+            "donated": false,
+            "imageName": "FrozenGeode"
+        }]
     },
     {
         "name": "Fodder Bundle",
-        "items": []
+        "items": [{
+            "name": "Wheat (10)",
+            "donated": false,
+            "imageName": "Wheat"
+        },{
+            "name": "Hay (10)",
+            "donated": false,
+            "imageName": "Hay"
+        },{
+            "name": "Apple (3)",
+            "donated": false,
+            "imageName": "Apple"
+        }]
     },
     {
         "name": "Enchanter's Bundle",
-        "items": []
+        "items": [{
+            "name": "Oak  Resin",
+            "donated": false,
+            "imageName": "OakResin"
+        },{
+            "name": "Wine",
+            "donated": false,
+            "imageName": "Wine"
+        },{
+            "name": "Rabbit's Foot",
+            "donated": false,
+            "imageName": "RabbitsFoot"
+        },{
+            "name": "Pomegranate",
+            "donated": false,
+            "imageName": "Pomegranate"
+        }]
     },
     {
         "name": "2,500 Bundle",
-        "items": []
+        "items": [
+            {
+            "name": "2,500g",
+            "donated": false,
+            "imageName": "2500g"
+        }
+        ]
     },
     {
         "name": "5,000 Bundle",
-        "items": []
+        "items": [{
+            "name": "5,000g",
+            "donated": false,
+            "imageName": "5000g"
+        }]
     },
     {
         "name": "10,000 Bundle",
-        "items": []
+        "items": [{
+            "name": "10,000g",
+            "donated": false,
+            "imageName": "10000g"
+        }]
     },
     {
         "name": "25,000 Bundle",
-        "items": []
+        "items": [{
+            "name": "25,000g",
+            "donated": false,
+            "imageName": "25000g"
+        }]
     },
     {
         "name": "The Missing Bundle",
-        "items": []
+        "items": [{
+            "name": "Silver or better quality wine",
+            "donated": false,
+            "imageName": "SilverWine"
+        },{
+            "name": "Dinosaur Mayonnaise",
+            "donated": false,
+            "imageName": "DinosaurMayonnaise"
+        },{
+            "name": "Prismatic Shard",
+            "donated": false,
+            "imageName": "PrismaticShard"
+        },{
+            "name": "Gold quality Ancient Fruit (5)",
+            "donated": false,
+            "imageName": "AncientFruitGold"
+        },{
+            "name": "Gold or better quality Void Salmon",
+            "donated": false,
+            "imageName": "GoldSalmon"
+        },{
+            "name": "Caviar",
+            "donated": false,
+            "imageName": "Caviar"
+        }]
     }
 ]

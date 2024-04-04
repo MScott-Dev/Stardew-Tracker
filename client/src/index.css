@@ -9,7 +9,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -57,6 +56,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+body {
+  background-image: url("./assets/images/stardewStars.jpg");
 }
 
 @media (prefers-color-scheme: light) {
