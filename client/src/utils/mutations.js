@@ -5,11 +5,13 @@ export const ADD_USER = gql`
     $username: String!
     $email: String!
     $password: String!
+    $bundles: [BundleInput!]
   ) {
     addUser(
       username: $username
       email: $email
       password: $password
+      bundles: $bundles
     ) {
       token
       user {
@@ -18,3 +20,15 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_BUNDLES = gql`
+  mutation addBundles(
+    $_id: String!
+  ) {
+    addBundles(
+      _id: $_id
+    ) {
+      user
+    }
+  }
+`

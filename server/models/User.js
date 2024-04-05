@@ -20,10 +20,9 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
-  communityCenter: [
+  bundles: [
     {
-      type: Schema.Types.ObjectId,
-      ref: 'Item',
+      type: Object
     },
   ],
 });

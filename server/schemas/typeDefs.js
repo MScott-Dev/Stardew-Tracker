@@ -1,10 +1,25 @@
 const typeDefs = `
-  type Item {
-    _id: ID
+
+type Item {
     name: String
-    bundle: String
     donated: Boolean
     imageName: String
+  }
+
+  input ItemInput {
+    name: String
+    donated: Boolean
+    imageName: String
+  }
+
+  type Bundle {
+    name: String
+    items: [Item]
+  }
+
+  input BundleInput {
+      name: String
+      items: [ItemInput]
   }
 
   type User {
@@ -12,7 +27,7 @@ const typeDefs = `
     username: String
     email: String
     password: String
-    communityCenter: [Item]
+    bundles: [Bundle]
   }
 
   type Auth {
@@ -24,11 +39,14 @@ const typeDefs = `
     me: User
     users: [User]
     items: [Item]
-    item(bundle: String): [Item]
+    bundles: [Bundle]
+    user(_id: ID!): User
   }
 
   type Mutation {
-    addUser(username: String!, email: String!, password: String!): Auth
+    addUser(username: String!, email: String!, password: String!, bundles: [BundleInput]): Auth
+    addBundles(_id: ID!, bundles: [BundleInput]): User
+    seedUser(_id: ID!, bundles: [BundleInput]): User
   }
 `;
 

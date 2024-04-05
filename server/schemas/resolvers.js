@@ -1,5 +1,6 @@
-const { User, Item } = require('../models');
+const { User, Item, Bundle } = require("../models");
 const { signToken, AuthenticationError } = require("../utils/auth");
+const bundles = require("../seeders/bundleSeed.json");
 
 const resolvers = {
   Query: {
@@ -18,15 +19,22 @@ const resolvers = {
 
       return usersData;
     },
+    user: async (parent, args) => {
+      const userData = await User.findOne({ _id: args._id }).select(
+        "-__v -password"
+      );
+
+      return userData;
+    },
     items: async (parent, args) => {
       const usersData = await Item.find();
 
       return usersData;
     },
-    item: async (parent, args) => {
-      const usersData = await Item.findOne({ bundle: args.bundles});
+    bundles: async (parent, args) => {
+      const bundlesData = await Bundle.find();
 
-      return usersData;
+      return bundlesData;
     },
   },
 
@@ -36,6 +44,15 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
+    },
+    seedUser: async (parent, args) => {
+      const userData = await User.findOneAndUpdate(
+        { _id: args._id },
+        { $addToSet: { bundles: { bundles } } },
+        { new: true }
+      );
+
+      return userData;
     },
   },
 };
