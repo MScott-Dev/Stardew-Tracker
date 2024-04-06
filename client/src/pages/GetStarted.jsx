@@ -1,13 +1,17 @@
 import Chicken from "../assets/images/Brown_Chicken.png";
-import { useMutation } from '@apollo/client';
-import { ADD_BUNDLES } from "../utils/mutations";
+import {QUERY_ME} from '../utils/queries';
+import { useQuery } from '@apollo/client';
+import Auth from "../utils/auth";
 
 const GetStarted = () => {
-    const [addBundles] = useMutation(ADD_BUNDLES);
+  const user = Auth.getProfile();
+  console.log(user.data._id);
+    
+
 
     const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(addBundles);
+    
     
     console.log("click!");
   };

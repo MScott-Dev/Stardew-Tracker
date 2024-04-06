@@ -7,6 +7,7 @@ import NoMatch from './pages/NoMatch';
 import Home from './pages/Home';
 import Signup from './pages/Signup.jsx';
 import GetStarted from './pages/GetStarted.jsx';
+import Communitycenter from './pages/CommunityCenter.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/getStarted",
         element: <GetStarted />
+      },
+      {
+        path: "/communityCenter/:user._id",
+        element: <Communitycenter/>
       }
     ]
   }

@@ -4,11 +4,12 @@ import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 import Starfruit from '../assets/images/Starfruit.png'
-import bundles from '../../../server/seeders/bundles';
+import bundles from '../utils/bundles';
 
 function Signup() {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [addUser] = useMutation(ADD_USER);
+  
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -17,13 +18,14 @@ function Signup() {
         email: formState.email,
         password: formState.password,
         username: formState.username,
-        bundles: { bundles }
+        bundles: bundles
       },
     });
     const token = mutationResponse.data.addUser.token;
     Auth.login(token);
-
-    window.location.assign('./');
+  
+    
+    window.location.assign(`./getstarted`)
   };
 
   const handleChange = (event) => {
