@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/client';
 import Auth from "../utils/auth";
 
 const GetStarted = () => {
+  // Gets the user's ID freom token and use it to go to their specific community center
   const user = Auth.getProfile();
   console.log(user.data._id);
     
