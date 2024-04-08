@@ -1,11 +1,10 @@
 import Chicken from "../assets/images/Brown_Chicken.png";
-import {QUERY_ME} from '../utils/queries';
-import { useQuery } from '@apollo/client';
 import Auth from "../utils/auth";
 
 const GetStarted = () => {
   const user = Auth.getProfile();
-  console.log(user.data._id);
+  const userID = user.data._id
+  
     
 
 
@@ -13,7 +12,7 @@ const GetStarted = () => {
     event.preventDefault();
     
     
-    console.log("click!");
+    window.location.assign(`/communitycenter/${userID}`)
   };
 
   return (

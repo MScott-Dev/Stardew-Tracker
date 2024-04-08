@@ -1,17 +1,41 @@
-import Chicken from "../assets/images/Brown_Chicken.png"
+import { useQuery } from '@apollo/client';
+import { useParams } from 'react-router-dom'; 
+import { QUERY_USER, QUERY_ME } from '../utils/queries';
+import SingleBundle from "../components/bundles";
 
-const communityCenter = () => {
 
+const CommunityCenter = () => {
 
+    const { _id: userParam } = useParams();
+
+    const { loading, error, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
+        variables: { _id: userParam },
+    });
+    if (loading) return 'Loading...';
+    if (error) return `Error! ${error.message}`;
+    console.log(data);
+    
+    
+        // data.me.bundles.forEach(bundle => {
+        // console.log(bundle);
+        // const name = bundle.name
+
+    
+    
 
   return (
-    <section className="background w-screen h-screen content-center">
-      <section className="flex justify-center">
-          <h1 className="text-yellow-300 font-bold">Community Center</h1>
-          <img className="size-8 ml-3 animate-bounce" src={Chicken} alt="Chicken"></img>
-      </section>
+    <section className="w-screen h-screen">
+      <div className="flex flex-wrap justify-center content-center">
+          {loading ? (
+            <div className="text-white">Loading...</div>
+          ) : 
+          <section className="flex flex-wrap justify-center content-center m-3">
+            <SingleBundle bundles={data.me.bundles}/>
+          </section>
+          }
+        </div>
     </section>
   );
 };
 
-export default communityCenter;
+export default CommunityCenter;

@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         element: <GetStarted />
       },
       {
-        path: "/communityCenter/:user._id",
+        path: "/communityCenter/:userID",
         element: <Communitycenter/>
       }
     ]
