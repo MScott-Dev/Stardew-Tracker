@@ -13,19 +13,13 @@ const CommunityCenter = () => {
     });
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
-    console.log(data);
-    
-    
-        // data.me.bundles.forEach(bundle => {
-        // console.log(bundle);
-        // const name = bundle.name
-
-    
-    
 
   return (
     <section className="w-screen h-screen">
-      <div className="flex flex-wrap justify-center content-center">
+      <section className='shadow-lg p-5 bg-slate-900'>
+        <h1 className="text-yellow-300 font-bold flex justify-center">Community Center</h1>
+      </section>
+      <div className="flex flex-wrap justify-center content-center h-auto bg-amber-100">
           {loading ? (
             <div className="text-white">Loading...</div>
           ) : 
