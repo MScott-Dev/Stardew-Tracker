@@ -1,4 +1,4 @@
-import Chicken from "../assets/images/Brown_Chicken.png";
+import Chicken from "../../public/images/Brown_Chicken.png"
 import Auth from "../utils/auth";
 
 const GetStarted = () => {

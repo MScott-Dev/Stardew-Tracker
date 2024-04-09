@@ -4,22 +4,22 @@
         "items": [{
             "name": "Wild Horseradish",
             "donated": false,
-            "imageName": "Wild_Horseradish"
+            "imageName": "../../public/images/Wild_Horseradish.png"
         },
         {
             "name": "Daffodil",
             "donated": false,
-            "imageName": "Daffodil"
+            "imageName": "../../public/images/Daffodil.png"
         },
         {
             "name": "Leek",
             "donated": false,
-            "imageName": "Leek"
+            "imageName": "../../public/images/Leek.png"
         },
         {
             "name": "Dandelion",
             "donated": false,
-            "imageName": "Dandelion"
+            "imageName": "../../public/images/Dandelion.png"
         }]
     },
     {
@@ -27,16 +27,16 @@
         "items": [{
             "name": "Grape",
             "donated": false,
-            "imageName": "Grape"
+            "imageName": "../../public/images/Grape.png"
         },{
             "name": "Spice Berry",
             "donated": false,
-            "imageName": "Spice Berry"
+            "imageName": "../../public/images/Spice_Berry.png"
         },
         {
             "name": "Sweet Pea",
             "donated": false,
-            "imageName": "SweetPea"
+            "imageName": "../../public/images/Sweet_Pea.png"
         }]
     },
     {
@@ -44,19 +44,19 @@
         "items": [{
             "name": "Common Mushroom",
             "donated": false,
-            "imageName": "CommonMushroom"
+            "imageName": "../../public/images/Common_Mushroom.png"
         },{
             "name": "Wild Plum",
             "donated": false,
-            "imageName": "WildPlum"
+            "imageName": "../../public/images/Wild_Plum.png"
         },{
-            "name": "Hazel Nut",
+            "name": "Hazelnut",
             "donated": false,
-            "imageName": "HazelNut"
+            "imageName": "../../public/images/Hazelnut.png"
         },{
             "name": "Blackberry",
             "donated": false,
-            "imageName": "Blackberry"
+            "imageName": "../../public/images/Blackberry.png"
         }]
     },
     {

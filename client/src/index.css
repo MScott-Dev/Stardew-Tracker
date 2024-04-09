@@ -58,7 +58,7 @@ button:focus-visible {
 }
 
 body {
-  background-image: url("./assets/images/stardewStars.jpg");
+  background-image: url("../public/images/stardewStars.jpg");
 }
 
 @media (prefers-color-scheme: light) {

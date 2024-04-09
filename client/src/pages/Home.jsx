@@ -1,4 +1,4 @@
-import Chicken from "../assets/images/Brown_Chicken.png"
+import Chicken from "../../public/images/Brown_Chicken.png"
 import { Link } from 'react-router-dom';
 
 const Home = () => {

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
-import Starfruit from '../assets/images/Starfruit.png'
+import Starfruit from "../../public/images/Starfruit.png"
 import bundles from '../utils/bundles';
 
 function Signup() {
