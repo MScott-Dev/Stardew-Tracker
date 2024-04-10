@@ -5,7 +5,7 @@ import SingleBundle from "../components/bundles";
 
 
 const CommunityCenter = () => {
-
+  // use the id from params to get the user
     const { _id: userParam } = useParams();
 
     const { loading, error, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
