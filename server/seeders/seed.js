@@ -5,9 +5,10 @@ const itemSeeds = require("./itemSeeds.json");
 const cleanDB = require('./cleanDB');
 
 db.once('open', async () => {
-  await cleanDB('Bundle', 'bundles');
-
-  await Bundle.create(bundleSeed);
+  // await cleanDB('Bundle', 'bundles');
+  await cleanDB("Item", "items");
+  // await Bundle.create(bundleSeed);
+  await Item.create(itemSeeds);
 
 
   console.log('all done!');

@@ -6,11 +6,12 @@ import { ADD_USER } from '../utils/mutations';
 import Starfruit from "../../public/images/Starfruit.png"
 import bundles from '../utils/bundles';
 
+
 function Signup() {
   const [formState, setFormState] = useState({ email: '', password: '' });
+ 
   const [addUser] = useMutation(ADD_USER);
   
-
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     const mutationResponse = await addUser({

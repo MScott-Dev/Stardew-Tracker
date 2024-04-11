@@ -1,6 +1,7 @@
 const { Schema, model } = require("mongoose");
 const bcrypt = require("bcrypt");
 const bundleSchema = require("./Bundle").schema;
+const itemSchema = require("./Item").schema;
 
 const userSchema = new Schema({
   username: {
@@ -20,6 +21,7 @@ const userSchema = new Schema({
     minlength: 5,
   },
   bundles: [bundleSchema],
+  donated: [itemSchema]
 });
 
 // set up pre-save middleware to create password

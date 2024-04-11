@@ -7,8 +7,10 @@ export const QUERY_ME = gql`
       username
       email
       bundles {
+        _id
         name
         items {
+          _id
           name
           donated
           imageName
@@ -25,8 +27,10 @@ export const QUERY_USER = gql`
       username
       email
       bundles {
+        _id
         name
         items {
+          _id
           name
           donated
           imageName
@@ -34,4 +38,6 @@ export const QUERY_USER = gql`
       }
     }
   }
-`
+`;
+
+

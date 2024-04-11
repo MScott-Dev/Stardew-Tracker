@@ -1,25 +1,29 @@
 const typeDefs = `
 
 type Item {
+    _id: ID
     name: String
     donated: Boolean
     imageName: String
   }
 
   input ItemInput {
+    _id: ID
     name: String
     donated: Boolean
     imageName: String
   }
 
   type Bundle {
+    _id: ID
     name: String
     items: [Item]
   }
 
   input BundleInput {
-      name: String
-      items: [ItemInput]
+    _id: ID
+    name: String
+    items: [ItemInput] 
   }
 
   type User {
@@ -41,12 +45,14 @@ type Item {
     items: [Item]
     bundles: [Bundle]
     user(_id: ID!): User
+    
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!, bundles: [BundleInput]): Auth
     addBundles(_id: ID!, bundles: [BundleInput]): User
     seedUser(_id: ID!, bundles: [BundleInput]): User
+    donate(_id: ID!): Item
   }
 `;
 

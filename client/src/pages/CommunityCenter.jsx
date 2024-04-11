@@ -13,7 +13,7 @@ const CommunityCenter = () => {
     });
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
-
+    console.log(data.me.bundles);
   return (
     <section className="w-screen h-screen">
       <section className='shadow-lg p-5 bg-slate-900'>

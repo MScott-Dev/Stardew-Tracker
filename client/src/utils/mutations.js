@@ -22,13 +22,9 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_BUNDLES = gql`
-  mutation addBundles(
-    $_id: String!
-  ) {
-    addBundles(
-      _id: $_id
-    ) {
+  mutation seedUser($_id: String!, $bundles: Object!) {
+    seedUser(_id: $_id, bundles: $Object) {
       user
     }
   }
-`
+`;

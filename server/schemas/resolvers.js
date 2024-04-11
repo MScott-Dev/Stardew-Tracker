@@ -40,15 +40,13 @@ const resolvers = {
 
       return { token, user };
     },
-    seedUser: async (parent, args) => {
-      const userData = await User.findOneAndUpdate(
+    donate: async (parent, args) => {
+      return Item.findByIdAndUpdate(
         { _id: args._id },
-        { $addToSet: { bundles: { bundles } } },
-        { new: true }
-      );
-
-      return userData;
-    },
+        { $set: { donated: true }},
+        { new: true },
+      )
+    }
   },
 };
 
