@@ -6,12 +6,14 @@ export const ADD_USER = gql`
     $email: String!
     $password: String!
     $bundles: [BundleInput!]
+    $donatedItems: [ID]
   ) {
     addUser(
       username: $username
       email: $email
       password: $password
       bundles: $bundles
+      donatedItems: $donatedItems
     ) {
       token
       user {
@@ -21,10 +23,10 @@ export const ADD_USER = gql`
   }
 `;
 
-export const ADD_BUNDLES = gql`
-  mutation seedUser($_id: String!, $bundles: Object!) {
-    seedUser(_id: $_id, bundles: $Object) {
-      user
+export const ADD_ITEM = gql`
+  mutation addItem($_id: ID, $donatedItems: ID) {
+    addItem(_id: $_id, donatedItems: $donatedItems) {
+      _id
     }
   }
 `;

@@ -4,7 +4,11 @@ import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import SingleBundle from "../components/bundles";
 
 
+
 const CommunityCenter = () => {
+
+  
+
   // use the id from params to get the user
     const { _id: userParam } = useParams();
 
@@ -13,7 +17,6 @@ const CommunityCenter = () => {
     });
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
-    console.log(data.me.bundles);
   return (
     <section className="w-screen h-screen">
       <section className='shadow-lg p-5 bg-slate-900'>
@@ -26,7 +29,7 @@ const CommunityCenter = () => {
             <div className="text-white">Loading...</div>
           ) : 
           <section className="flex flex-wrap justify-center content-center m-3">
-            <SingleBundle bundles={data.me.bundles}/>
+            <SingleBundle bundles={data.me.bundles} donatedItems={data.me.donatedItems}/>
           </section>
           }
         </div>

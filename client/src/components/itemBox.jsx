@@ -1,10 +1,19 @@
+import { ADD_ITEM } from "../utils/mutations";
+import { useMutation } from '@apollo/client';
+
 
 const ItemBox = ({items}) => {
+    // Use the useMutation hook for Add item mutation
+    const [addItem] = useMutation(ADD_ITEM);
+  
     
-    const donateButton = (event) => {
+    const donateButton = async (event) => {
         event.preventDefault();
         
-        const itemID = event.target.value
+        const itemID = items._id
+        const mutationResponse = await addItem({
+            variables: { _id: "6618a2574b2c05f99bac2594", donatedItems: itemID },
+            });
 
         console.log(itemID);
     }
@@ -23,7 +32,7 @@ if (items.name === undefined) {
                     <p className="">{items.name} </p>
                 </section>
                 <section className='border-2 border-yellow-200 bg-yellow-50 p-3 flex justify-center content-center flex-wrap h-14'>
-                    <button className='border-2 border-yellow-200 bg-yellow-100  h-8 content-center flex flex-wrap' onClick={donateButton} value={items._id}>
+                    <button type="button" className='border-2 border-yellow-200 bg-yellow-100  h-8 content-center flex flex-wrap' onClick={donateButton}>
                         Donate!
                     </button>
                 </section>

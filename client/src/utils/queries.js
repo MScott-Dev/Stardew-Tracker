@@ -16,6 +16,7 @@ export const QUERY_ME = gql`
           imageName
         }
       }
+      donatedItems
     }
   }
 `;
@@ -36,8 +37,7 @@ export const QUERY_USER = gql`
           imageName
         }
       }
+      donatedItems
     }
   }
 `;
-
-

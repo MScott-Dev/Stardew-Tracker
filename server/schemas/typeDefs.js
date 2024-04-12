@@ -32,6 +32,7 @@ type Item {
     email: String
     password: String
     bundles: [Bundle]
+    donatedItems: [ID]
   }
 
   type Auth {
@@ -45,14 +46,13 @@ type Item {
     items: [Item]
     bundles: [Bundle]
     user(_id: ID!): User
-    
   }
 
   type Mutation {
-    addUser(username: String!, email: String!, password: String!, bundles: [BundleInput]): Auth
+    addUser(username: String!, email: String!, password: String!, bundles: [BundleInput], donatedItems: [ID]): Auth
     addBundles(_id: ID!, bundles: [BundleInput]): User
     seedUser(_id: ID!, bundles: [BundleInput]): User
-    donate(_id: ID!): Item
+    addItem(_id: ID, donatedItems: ID): User
   }
 `;
 

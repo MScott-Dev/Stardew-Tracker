@@ -40,12 +40,14 @@ const resolvers = {
 
       return { token, user };
     },
-    donate: async (parent, args) => {
-      return Item.findByIdAndUpdate(
-        { _id: args._id },
-        { $set: { donated: true }},
-        { new: true },
-      )
+    addItem: async (parent, { _id, donatedItems }) => {
+      const userData = await User.findByIdAndUpdate(
+        { _id: _id },
+        { $addToSet: { donatedItems: donatedItems } },
+        { new: true }
+      );
+
+      return userData;
     }
   },
 };
