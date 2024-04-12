@@ -3,9 +3,8 @@ import { useParams } from 'react-router-dom';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import SingleBundle from "../components/bundles";
 
-
-
 const CommunityCenter = () => {
+
 
   // use the id from params to get the user
     const { _id: userParam } = useParams();
