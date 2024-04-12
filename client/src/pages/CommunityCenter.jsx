@@ -7,8 +7,6 @@ import SingleBundle from "../components/bundles";
 
 const CommunityCenter = () => {
 
-  
-
   // use the id from params to get the user
     const { _id: userParam } = useParams();
 
@@ -17,6 +15,8 @@ const CommunityCenter = () => {
     });
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
+
+    
   return (
     <section className="w-screen h-screen">
       <section className='shadow-lg p-5 bg-slate-900'>
