@@ -13,7 +13,7 @@ const ItemBox = ({items, donated}) => {
         
         const itemID = items._id
         const mutationResponse = await addItem({
-            variables: { _id: "6618a2574b2c05f99bac2594", donatedItems: itemID },
+            variables: { _id: "661955d67f4d697decfac28d", donatedItems: itemID },
             });
         const name = items._id;
         const nameSection = document.getElementById(name);
