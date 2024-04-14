@@ -12,6 +12,7 @@ const ItemBox = ({items, donated}) => {
         event.preventDefault();
         
         const itemID = items._id
+        // TODO pass in ID as a prop to use
         const mutationResponse = await addItem({
             variables: { _id: "661955d67f4d697decfac28d", donatedItems: itemID },
             });
