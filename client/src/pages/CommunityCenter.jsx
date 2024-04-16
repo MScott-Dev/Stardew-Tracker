@@ -15,6 +15,7 @@ const CommunityCenter = () => {
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
 
+    console.log(data.me._id);
     
   return (
     <section className="w-screen h-screen">
@@ -28,7 +29,7 @@ const CommunityCenter = () => {
             <div className="text-white">Loading...</div>
           ) : 
           <section className="flex flex-wrap justify-center content-center m-3">
-            <SingleBundle bundles={data.me.bundles} donatedItems={data.me.donatedItems}/>
+            <SingleBundle bundles={data.me.bundles} donatedItems={data.me.donatedItems} id={data.me._id}/>
           </section>
           }
         </div>

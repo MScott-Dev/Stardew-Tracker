@@ -4,17 +4,17 @@ import { useMutation } from '@apollo/client';
 
 
 
-const ItemBox = ({items, donated}) => {
+const ItemBox = ({items, donated, id}) => {
     // Use the useMutation hook for Add item mutation
     const [addItem] = useMutation(ADD_ITEM);
 
     const donateButton = async (event) => {
         event.preventDefault();
-        
+        const userId = id
+        console.log(userId);
         const itemID = items._id
-        // TODO pass in ID as a prop to use
         const mutationResponse = await addItem({
-            variables: { _id: "661955d67f4d697decfac28d", donatedItems: itemID },
+            variables: { _id: userId, donatedItems: itemID },
             });
         const name = items._id;
         const nameSection = document.getElementById(name);
