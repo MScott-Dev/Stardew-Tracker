@@ -1,6 +1,5 @@
 const { User, Item, Bundle } = require("../models");
 const { signToken, AuthenticationError } = require("../utils/auth");
-const bundles = require("../seeders/bundleSeed.json");
 
 const resolvers = {
   Query: {
@@ -40,6 +39,7 @@ const resolvers = {
 
       return { token, user };
     },
+
     addItem: async (parent, { _id, donatedItems }) => {
       const userData = await User.findByIdAndUpdate(
         { _id: _id },
@@ -48,7 +48,25 @@ const resolvers = {
       );
 
       return userData;
-    }
+    },
+
+    login: async (parent, { email, password }) => {
+      const user = await User.findOne({ email });
+
+      if (!user) {
+        throw AuthenticationError;
+      }
+
+      const correctPw = await user.isCorrectPassword(password);
+
+      if (!correctPw) {
+        throw AuthenticationError;
+      }
+
+      const token = signToken(user);
+
+      return { token, user };
+    },
   },
 };
 

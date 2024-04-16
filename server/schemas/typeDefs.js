@@ -53,6 +53,7 @@ type Item {
     addBundles(_id: ID!, bundles: [BundleInput]): User
     seedUser(_id: ID!, bundles: [BundleInput]): User
     addItem(_id: ID, donatedItems: ID): User
+    login(email: String!, password: String!): Auth
   }
 `;
 
