@@ -26,6 +26,9 @@ const CommunityCenter = () => {
         <h1 className="text-yellow-300 font-bold flex justify-center">Community Center</h1>
         <p className='flex justify-end mr-5 text-slate-500'>All images credited to Stardew Valley Wiki! Check it out below!</p>
         <a className='flex justify-end mr-5 text-slate-500 cursor-pointer'>https://stardewvalleywiki.com/Stardew_Valley_Wiki</a>
+        <section className='flex justify-end m-3'>
+          <button href="/" onClick={() => Auth.logout()} className='bg-yellow-100 hover:scale-110 rounded text-black hover:border-2 hover:border-yellow-300'>Logout</button>
+        </section>
       </section>
       <div className="flex flex-wrap justify-center content-center h-auto bg-amber-100">
           {loading ? (
