@@ -6,7 +6,7 @@ import { ADD_USER } from '../utils/mutations';
 import Starfruit from "../../public/images/Starfruit.png"
 import bundles from '../utils/bundles';
 
-
+// TODO message for each error to let the user know what happened
 function Signup() {
   const [formState, setFormState] = useState({ email: '', password: '' });
 
