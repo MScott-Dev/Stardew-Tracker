@@ -50,6 +50,16 @@ const resolvers = {
       return userData;
     },
 
+    removeItem: async (parent, { _id, donatedItems }) => {
+      const userData = await User.findByIdAndUpdate(
+        { _id: _id },
+        { $pull: { donatedItems: donatedItems } },
+        { new: true }
+      );
+
+      return userData;
+    },
+
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 

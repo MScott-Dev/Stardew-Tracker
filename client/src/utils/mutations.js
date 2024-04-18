@@ -31,6 +31,14 @@ export const ADD_ITEM = gql`
   }
 `;
 
+export const REMOVE_ITEM = gql`
+  mutation removeItem($_id: ID, $donatedItems: ID) {
+    removeItem(_id: $_id, donatedItems: $donatedItems) {
+      _id
+    }
+  }
+`;
+
 export const LOGIN = gql`
   mutation login($email: String!, $password: String!) {
     login(email: $email, password: $password) {

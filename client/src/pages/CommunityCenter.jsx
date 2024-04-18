@@ -3,8 +3,6 @@ import { useParams } from 'react-router-dom';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import SingleBundle from "../components/bundles";
 
-// TODO logout button somewhere
-// TODO button to remove the item from user
 
 const CommunityCenter = () => {
 
