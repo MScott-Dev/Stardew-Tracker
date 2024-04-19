@@ -2,7 +2,7 @@ import { useQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom'; 
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import SingleBundle from "../components/bundles";
-
+import Auth from '../utils/auth';
 
 const CommunityCenter = () => {
 

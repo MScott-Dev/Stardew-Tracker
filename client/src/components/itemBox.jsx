@@ -44,17 +44,19 @@ if (items.name === undefined) {
     return (
         <div>
             <section  className='flex justify-center m-2 shadow-lg'>
-                <section className='border-2  border-yellow-200 bg-yellow-50 p-3 size-14'>
+                <section className='border-2  border-yellow-200 bg-yellow-50 p-3 size-22'>
                     <img src={items.imageName} alt={items.name}></img>
                 </section>
-                <section id={items._id} className='border-t-2 border-b-2 border-yellow-200 text-sm bg-yellow-50 text-green-600 p-3 font-bold flex content-center flex-wrap h-14 w-48 line-through'>
+                <section id={items._id} className='border-t-2 border-b-2 border-yellow-200 text-sm bg-yellow-50 p-3 font-bold flex content-center flex-wrap h-18 w-48 line-through text-green-600'>
                     <p value={items._id}>{items.name} </p>
                 </section>
-                <section className='border-2 border-yellow-200 bg-yellow-50 p-3 flex justify-center content-center flex-wrap h-14'>
-                    <button type="button" className='border-2 border-yellow-200 bg-yellow-100  h-8 content-center flex flex-wrap' onClick={removeButton}>
+                <section className='border-2 border-yellow-200 bg-yellow-50 p-3 flex justify-center content-center flex-wrap h-18 gap-2'>
+                    <button type="button" className='border-2 border-yellow-200 bg-yellow-100 hover:bg-green-300 h-8 content-center flex flex-wrap' onClick={donateButton}>
+                        Donate
+                    </button>
+                    <button type="button" className='border-2 border-yellow-200 bg-yellow-100 hover:bg-rose-300  h-8 content-center flex flex-wrap' onClick={removeButton}>
                         Remove
                     </button>
-                    
                 </section>
             </section>
         </div>
@@ -63,15 +65,18 @@ if (items.name === undefined) {
     return (
         <div>
             <section  className='flex justify-center m-2 shadow-lg'>
-                <section className='border-2  border-yellow-200 bg-yellow-50 p-3 size-14'>
+                <section className='border-2  border-yellow-200 bg-yellow-50 p-3 size-22'>
                     <img src={items.imageName} alt={items.name}></img>
                 </section>
-                <section id={items._id} className='border-t-2 border-b-2 border-yellow-200 text-sm bg-yellow-50 p-3 font-bold flex content-center flex-wrap h-14 w-48'>
+                <section id={items._id} className='border-t-2 border-b-2 border-yellow-200 text-sm bg-yellow-50 p-3 font-bold flex content-center flex-wrap h-18 w-48'>
                     <p value={items._id}>{items.name} </p>
                 </section>
-                <section className='border-2 border-yellow-200 bg-yellow-50 p-3 flex justify-center content-center flex-wrap h-14'>
-                    <button type="button" className='border-2 border-yellow-200 bg-yellow-100  h-8 content-center flex flex-wrap' onClick={donateButton}>
+                <section className='border-2 border-yellow-200 bg-yellow-50 p-3 flex justify-center content-center flex-wrap h-18 gap-2'>
+                    <button type="button" className='border-2 border-yellow-200 bg-yellow-100 hover:bg-green-300 h-8 content-center flex flex-wrap' onClick={donateButton}>
                         Donate
+                    </button>
+                    <button type="button" className='border-2 border-yellow-200 bg-yellow-100 hover:bg-rose-300 h-8 content-center flex flex-wrap' onClick={removeButton}>
+                        Remove
                     </button>
                 </section>
             </section>
