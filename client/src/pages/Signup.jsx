@@ -88,7 +88,7 @@ function Signup() {
           </div>
           <div className="flex flex-wrap justfity-evenly content-center gap-3 h-20">
             <div className="mb-5  w-full">
-                <label className="block text-sm font-medium text-gray-600 dark:text-offWhite" htmlFor="pwd">Password</label>
+                <label className="block text-sm font-medium text-gray-600 dark:text-offWhite" htmlFor="pwd">Password <span className='italic text-gray-300'>Mininum 5</span></label>
                 <input
                   className="mt-1 p-2 w-full border rounded-md shadow-lg"
                   placeholder="******"
