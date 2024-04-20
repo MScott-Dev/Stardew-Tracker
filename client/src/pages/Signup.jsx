@@ -23,6 +23,7 @@ function Signup() {
         bundles: bundles
       },
       onError(err) {
+        console.log(err);
         if (err == `ApolloError: E11000 duplicate key error collection: Stardew-tracker.users index: email_1 dup key: { email: "${formState.email}" }`) {
         setErrorMessage("Email already in use, please try a different one!");
       } else if (err == `ApolloError: E11000 duplicate key error collection: Stardew-tracker.users index: username_1 dup key: { username: "${formState.username}" }`) {
@@ -88,7 +89,7 @@ function Signup() {
           </div>
           <div className="flex flex-wrap justfity-evenly content-center gap-3 h-20">
             <div className="mb-5  w-full">
-                <label className="block text-sm font-medium text-gray-600 dark:text-offWhite" htmlFor="pwd">Password <span className='italic text-gray-300'>Mininum 5</span></label>
+                <label className="block text-sm font-medium text-gray-600 dark:text-offWhite" htmlFor="pwd">Password <span className='italic text-gray-400'>Mininum 5</span></label>
                 <input
                   className="mt-1 p-2 w-full border rounded-md shadow-lg"
                   placeholder="******"

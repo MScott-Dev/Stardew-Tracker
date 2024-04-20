@@ -9,6 +9,7 @@ import Signup from './pages/Signup.jsx';
 import GetStarted from './pages/GetStarted.jsx';
 import Communitycenter from './pages/CommunityCenter.jsx';
 import Login from './pages/Login.jsx';
+import WrongTurn from './pages/WrongTurn.jsx';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/communityCenter/:userID",
         element: <Communitycenter/>
+      },
+      {
+        path: "/communityCenter/WrongTurn",
+        element: <WrongTurn/>
       }
     ]
   }

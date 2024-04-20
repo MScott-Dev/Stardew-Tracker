@@ -17,12 +17,14 @@ type Item {
   type Bundle {
     _id: ID
     name: String
+    required: Int
     items: [Item]
   }
 
   input BundleInput {
     _id: ID
     name: String
+    required: Int
     items: [ItemInput] 
   }
 

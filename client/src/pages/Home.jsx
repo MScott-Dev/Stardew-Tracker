@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <section className="background w-screen h-screen content-center">
       <section className="flex justify-center">
-          <h1 className="text-yellow-300 font-bold">Stardew Tracker</h1>
+          <h1 className="text-yellow-300 font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-5xl">Stardew Tracker</h1>
           <img className="size-8 ml-3 animate-bounce" src={Chicken} alt="Chicken"></img>
       </section>
       <section className="flex justify-center m-4">

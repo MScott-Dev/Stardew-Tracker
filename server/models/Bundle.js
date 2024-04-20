@@ -5,6 +5,9 @@ const bundleSchema = new Schema({
   name: {
     type: String,
   },
+  required: {
+    type: Number,
+  },
   items: [itemSchema],
 });
 

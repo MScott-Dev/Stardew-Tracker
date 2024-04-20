@@ -9,6 +9,7 @@ export const QUERY_ME = gql`
       bundles {
         _id
         name
+        required
         items {
           _id
           name
@@ -30,6 +31,7 @@ export const QUERY_USER = gql`
       bundles {
         _id
         name
+        required
         items {
           _id
           name
