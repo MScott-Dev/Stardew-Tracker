@@ -54,7 +54,7 @@ if (items.name === undefined) {
                     <button type="button" className='border-2 border-yellow-200 bg-yellow-100 hover:bg-green-300 h-8 content-center flex flex-wrap' onClick={donateButton}>
                         Donate
                     </button>
-                    <button type="button" className='border-2 border-yellow-200 bg-yellow-100 hover:bg-rose-300  h-8 content-center flex flex-wrap' onClick={removeButton}>
+                    <button type="button" className='border-2  border-yellow-200 bg-yellow-100 hover:bg-rose-300  h-8 content-center flex flex-wrap' onClick={removeButton}>
                         Remove
                     </button>
                 </section>

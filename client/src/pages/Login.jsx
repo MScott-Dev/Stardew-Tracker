@@ -5,7 +5,6 @@ import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
 import Starfruit from "../../public/images/Starfruit.png"
 
-// TODO message for each error to let the user know what happened
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });

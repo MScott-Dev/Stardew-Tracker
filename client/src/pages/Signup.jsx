@@ -24,9 +24,9 @@ function Signup() {
       },
       onError(err) {
         console.log(err);
-        if (err == `ApolloError: E11000 duplicate key error collection: Stardew-tracker.users index: email_1 dup key: { email: "${formState.email}" }`) {
+        if (err == `ApolloError: E11000 duplicate key error collection: StardewTracker.users index: email_1 dup key: { email: "${formState.email}" }`) {
         setErrorMessage("Email already in use, please try a different one!");
-      } else if (err == `ApolloError: E11000 duplicate key error collection: Stardew-tracker.users index: username_1 dup key: { username: "${formState.username}" }`) {
+      } else if (err == `ApolloError: E11000 duplicate key error collection: StardewTracker.users index: username_1 dup key: { username: "${formState.username}" }`) {
         setErrorMessage('Username is taken, please try a different one!');
       } else {
         setErrorMessage("An error happened");
