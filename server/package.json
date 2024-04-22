@@ -19,9 +19,11 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^7.0.2",
     "stripe": "^8.67.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "tar": ">=6.2.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "tar": ">=6.2.1"
   }
 }
