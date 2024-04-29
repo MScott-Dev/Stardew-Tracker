@@ -21,7 +21,7 @@ Track all your donations to the community center online and never lose track of 
 
 ## Screenshot and Live Link <a name="LRaS"></a>
 <img src="https://imgur.com/R7gA3Jv.png" alt="Stardew website" /> <br> <br>
-Live Link: https://just-another-text-editor-dfz1.onrender.com/
+Live Link: https://stardew-tracker.onrender.com
 
 ## Technologies Used <a name="Technologies"></a>
 <ul>
