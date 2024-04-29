@@ -8,16 +8,13 @@
 [Description](#Description) <br>
 [Screenshots and Live Link](#LRaS) <br>
 [Technologies Used](#Technologies) <br>
-[Installation](#Installation) <br>
-[Features](#Features) <br>
-[Usage](#Usage) <br>
 [Contribution](#Contribution) <br>
 [Author](#Author) <br>
 [License](#License) <br>
 [Questions](#Questions) <br>
 
 ## Description <a name="Description"></a>
-Track all your donations to the community center online and never lose track of what you're missing!
+Your ultimate companion for navigating the intricacies of the beloved game's community center bundles. Seamlessly designed and user-friendly, our website offers a comprehensive database of bundle requirements, helping players efficiently track their progress in completing each set. Players can easily identify which items are needed for each bundle and strategize their gameplay accordingly. Whether you're a seasoned farmer or just starting your Stardew Valley adventure, our Bundle Tracker ensures a smoother journey towards restoring the community center to its former glory.
 
 ## Screenshot and Live Link <a name="LRaS"></a>
 <img src="https://imgur.com/R7gA3Jv.png" alt="Stardew website" /> <br> <br>
@@ -25,42 +22,18 @@ Live Link: https://stardew-tracker.onrender.com
 
 ## Technologies Used <a name="Technologies"></a>
 <ul>
-  <li>JavaScript</li>
-  <li>NodeJS</li>
+  <li>React</li>
+  <li>React router</li>
+  <li>Vite</li>
   <li>ExpressJS</li>
-  <li>Webpack</li>
-  <li>webpack-cli</li>
-  <li>webpack-dev-server</li>
-  <li>workbox-webpack-plugin</li>
-  <li>Nodemon</li>
+  <li>GraphQL</li>
   <li>concurrently</li>
-  <li>IndexedDB</li>
-  <li>idb</li>
-  <li>Render</li>
+  <li>Apollo Server</li>
+  <li>nodemon</li>
+  <li>jsonwebtoken</li>
+  <li>tailwind css</li>
 </ul>
 
-## Installation <a name="Installation"></a>
-Locally
-1. Clone this repo locally 
-2. Open it inside of VS Code
-3. Inside the ternimal, run <code>npm run install</code>
-4. Run <code>npm run build</code>
-5. Run <code>npm run start:dev</code>
-6. Open up Localhost:3000 on your browser
-
-Live
-1. Click the link found in [Screenshots and Live Link](#LRaS)
-
-## Features <a name="Features"></a>
-<ul>
-  <li>Progessive Web App</li>
-  <li>Installable</li>
-  <li>Works online and offline</li>
-  <li>Saves data even if the page closes</li>
-</ul>
-
-## Usage <a name="Usage"></a>
-A simple text editor to save anything you need! Can be installed locally and works completely offline!
 
 ## Contributions <a name="Contribution"></a>
 If you think you can improve this project, Send me a message! info at the bottom
